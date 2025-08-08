@@ -6,11 +6,11 @@ export default async(message) => {
   }
   
   if (message.content.match(/にゃん|にゃーん|にゃ～ん/)) {
-    await message.reply("にゃ～ん");
+    await message.reply("にゃ～ん", "にゃんにゃん");
   }
   
   if (message.content.match(/原稿|おげんこ/)) {
-    await message.reply("がんばってや～");
+    await message.reply("がんばってや～", "がんばれ💗がんばれ💗");
   }
   if (message.content.match(/^\d+d\d+$/)) {
     await message.reply(ndnDice(message.content));
