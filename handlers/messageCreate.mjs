@@ -7,6 +7,7 @@ export default async(message) => {
   
   if (message.content.match(/にゃん|にゃーん|にゃ～ん/)) {
     await message.reply("にゃ～ん", "にゃんにゃん");
+    index = random.randint(0, len(texts) - 1);
   }
   
   if (message.content.match(/原稿|おげんこ/)) {
